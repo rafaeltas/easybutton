@@ -1,6 +1,6 @@
 from krita import DockWidget
-from PyQt5.QtWidgets import QPushButton, QVBoxLayout, QWidget
-from PyQt5.QtCore import QTimer
+from PyQt5.QtWidgets import QApplication, QPushButton, QVBoxLayout, QWidget
+from PyQt5.QtCore import Qt, QTimer
 from .buttons_list import blending_modes
 
 DOCKER_TITLE = 'Easy Button'
@@ -45,11 +45,14 @@ class EasyButton(DockWidget):
     # Normal Layer
     def _apply_blending_mode(self, blending_mode):
         mode = blending_mode
+        modifiers = QApplication.keyboardModifiers()
         def changeBlendingModeLayer(i):
             app = Krita.instance()
             activeDocument = app.activeDocument()
             activeNode = activeDocument.activeNode()            
             #create new paint layer
+            if modifiers == Qt.ShiftModifier:
+                i = i + 1
             if i == 0:
                 app.action('add_new_paint_layer').trigger()
 
