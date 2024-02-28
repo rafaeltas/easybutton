@@ -1,6 +1,7 @@
 from krita import DockWidget
 from PyQt5.QtWidgets import QPushButton, QVBoxLayout, QWidget
 from PyQt5.QtCore import QTimer
+from .buttons_list import blending_modes
 
 DOCKER_TITLE = 'Easy Button'
 
@@ -14,7 +15,6 @@ class EasyButton(DockWidget):
         mainWidget = QWidget(self)
         self.setWidget(mainWidget)
 
-        blending_modes = {"Normal": "normal", "Darken": "darken", "Color Dodge": "dodge"}
         for key, value in blending_modes.items():
             
             button = QPushButton(key)
