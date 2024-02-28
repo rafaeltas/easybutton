@@ -1,5 +1,6 @@
-from krita import *
-from PyQt5.QtWidgets import *
+from krita import DockWidget
+from PyQt5.QtWidgets import QPushButton, QVBoxLayout, QWidget
+from PyQt5.QtCore import QTimer
 
 DOCKER_TITLE = 'Easy Button'
 
@@ -30,16 +31,16 @@ class EasyButton(DockWidget):
             self._apply_blending_mode(blending_mode)
         #Debugging
 
-        app = Krita.instance()
-        activeDocument = app.activeDocument()
-        activeNode = activeDocument.activeNode()
-        layoutForButtons = QHBoxLayout()
-        newButton = QPushButton(blending_mode)
-        layoutForButtons.addWidget(newButton)
-        newDialog = QDialog()
-        newDialog.setLayout(layoutForButtons)
-        newDialog.setWindowTitle(blending_mode)
-        newDialog.exec_()
+        # app = Krita.instance()
+        # activeDocument = app.activeDocument()
+        # activeNode = activeDocument.activeNode()
+        # layoutForButtons = QHBoxLayout()
+        # newButton = QPushButton(blending_mode)
+        # layoutForButtons.addWidget(newButton)
+        # newDialog = QDialog()
+        # newDialog.setLayout(layoutForButtons)
+        # newDialog.setWindowTitle(blending_mode)
+        # newDialog.exec_()
 
     # Normal Layer
     def _apply_blending_mode(self, blending_mode):
@@ -56,7 +57,7 @@ class EasyButton(DockWidget):
             if i == 1:
                 activeNode.setBlendingMode(mode)
                             
-            if i < 2: QtCore.QTimer.singleShot(2, lambda: changeBlendingModeLayer(i+1) )
+            if i < 2: QTimer.singleShot(4, lambda: changeBlendingModeLayer(i+1) )
         changeBlendingModeLayer(0)
 
 
