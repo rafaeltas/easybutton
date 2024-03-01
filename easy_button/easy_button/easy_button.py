@@ -14,10 +14,12 @@ class EasyButton(DockWidget):
 
         mainWidget = QWidget(self)
         self.setWidget(mainWidget)
-
+        # Read all option of blending modes in "button_lis.py" files.
         for key, value in blending_modes.items():
             
             button = QPushButton(key)
+            # Stryle of BM Buttons.
+            button.setStyleSheet("background-color: #7f00ff; color: #ffffff")
             self.button_mapping.update({button: value})
             button.clicked.connect(lambda _, button=button: self._on_button_click(button))
 

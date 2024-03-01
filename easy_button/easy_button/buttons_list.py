@@ -1,1 +1,5 @@
-blending_modes = {"Normal": "normal", "Darken": "darken", "Color Dodge": "dodge"}
+blending_modes = {
+    "Normal": "normal",
+    "Darken": "darken",
+    "Color Dodge": "dodge",
+    }
