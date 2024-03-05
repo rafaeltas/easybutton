@@ -53,16 +53,20 @@ class EasyButton(DockWidget):
             activeDocument = app.activeDocument()
             activeNode = activeDocument.activeNode()            
             #create new paint layer
-            if modifiers == Qt.ShiftModifier:
-                i = i + 1
-            if i == 0:
+            if  i == 0 and modifiers == Qt.ShiftModifier:
+                i = i + 3
+
+            if i == 1:
                 app.action('add_new_paint_layer').trigger()
 
+            if  i == 2 and modifiers == Qt.ControlModifier:
+                app.action('move_layer_down').trigger()
+
             #change the new layer to blending mode
-            if i == 1:
+            if i == 3:
                 activeNode.setBlendingMode(mode)
                             
-            if i < 2: QTimer.singleShot(4, lambda: changeBlendingModeLayer(i+1) )
+            if i < 4: QTimer.singleShot(4, lambda: changeBlendingModeLayer(i+1) )
         changeBlendingModeLayer(0)
 
 
