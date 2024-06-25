@@ -19,7 +19,7 @@ class EasyButton(DockWidget):
             
             button = QPushButton(key)
             # Stryle of BM Buttons.
-            button.setStyleSheet("background-color: #7f00ff; color: #ffffff")
+            button.setStyleSheet("background-color: #7f00ff; color: #ffffff; max-width:100px")
             self.button_mapping.update({button: value})
             button.clicked.connect(lambda _, button=button: self._on_button_click(button))
 
