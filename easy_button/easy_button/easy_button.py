@@ -18,31 +18,31 @@ class EasyButton(DockWidget):
         for key, value in blending_modes.items():
             
             button = QPushButton(key)
-            # Stryle of BM Buttons.
-            button.setStyleSheet("background-color: #7f00ff; color: #ffffff; max-width:100px")
+            # Style of BM Buttons.
+            # Get the palette from the application
+            app = QApplication.instance()
+            palette = app.palette()
+            
+            # Retrieve the color role for the selection background
+            selection_bg_color = palette.color(palette.Highlight)
+            
+            # Convert QColor to hexadecimal string
+            hex_color = selection_bg_color.name()
+
+            bg_color_theme = hex_color
+            button.setStyleSheet(f"background-color: {bg_color_theme}; color: #ffffff; max-width:100px")
             self.button_mapping.update({button: value})
             button.clicked.connect(lambda _, button=button: self._on_button_click(button))
 
             mainWidget.setLayout(QVBoxLayout())
             mainWidget.layout().addWidget(button)
+            mainWidget.setStyleSheet("max-width:100px")
 
     def _on_button_click(self, source):
 
         blending_mode = self.button_mapping.get(source)
         if blending_mode:
             self._apply_blending_mode(blending_mode)
-        #Debugging
-
-        # app = Krita.instance()
-        # activeDocument = app.activeDocument()
-        # activeNode = activeDocument.activeNode()
-        # layoutForButtons = QHBoxLayout()
-        # newButton = QPushButton(blending_mode)
-        # layoutForButtons.addWidget(newButton)
-        # newDialog = QDialog()
-        # newDialog.setLayout(layoutForButtons)
-        # newDialog.setWindowTitle(blending_mode)
-        # newDialog.exec_()
 
     # Normal Layer
     def _apply_blending_mode(self, blending_mode):
