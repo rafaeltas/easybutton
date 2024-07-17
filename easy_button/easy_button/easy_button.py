@@ -69,7 +69,6 @@ class EasyButton(DockWidget):
             if i < 4: QTimer.singleShot(4, lambda: changeBlendingModeLayer(i+1) )
         changeBlendingModeLayer(0)
 
-
     # notifies when views are added or removed
     #pass means do not do anything
     def canvasChanged(self, canvas):
