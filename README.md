@@ -15,10 +15,7 @@ Comando extras:
 **LShift + LMB**= Muda o blending mode da layer selecionada para a opção clicada.
 **LCtrl + LMB** = Cria uma layer com o blending mode selecionado abaixo da layer selecionada anteriormente.
 
-## Templates de Perfil 🙋‍♂️
-
-Você é único e seu perfil do GitHub também deve ser! Explore nosso diretório de [templates de perfil](https://github.com/DiasEllen26/template-readme/tree/main/perfil) para encontrar exemplos incríveis que o ajudarão a se destacar da multidão. Mostre ao mundo suas habilidades, projetos em destaque e muito mais!
-
+---
 
 ## Status 🏗️
 
