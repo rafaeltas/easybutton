@@ -26,4 +26,4 @@ Atualmente e fase inicial.
 ## Contribuição 🤝
 
 Sendo um plugin gratuíto, fique livre para contribuir ou até fazer uma doação para eu continuar dando suporte para está ferramenta.
-[Meu LivrePIX 💲 :](https://livepix.gg/rafaeltas)
+[Meu LivrePIX 🪙 :](https://livepix.gg/rafaeltas)
