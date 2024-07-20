@@ -11,9 +11,9 @@ Me inspirei no Layer Factor do [Sergey Kritskiy](https://kritskiy.gumroad.com/),
 No momento as cores dos botões seguem o padrão do tema do usuário, talvez seja uma coisa legal de deixar o usuário configurar....
 Comando extras:
 (LMB = Left Mouse Button)
-**LMB** = Cria uma layer com o blending mode selecionado.
-**LShift + LMB**= Muda o blending mode da layer selecionada para a opção clicada.
-**LCtrl + LMB** = Cria uma layer com o blending mode selecionado abaixo da layer selecionada anteriormente.
+- **LMB** = Cria uma layer com o blending mode selecionado.
+- **LShift + LMB**= Muda o blending mode da layer selecionada para a opção clicada.
+- **LCtrl + LMB** = Cria uma layer com o blending mode selecionado abaixo da layer selecionada anteriormente.
 
 ---
 
