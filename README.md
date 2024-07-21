@@ -2,8 +2,8 @@
 
 [![License](https://img.shields.io/badge/License-GNU-green.svg)](LICENSE)
 
-Inicialmente fiz para ajudar a comunidade open source e os artistas que possam querer alternativas caso não tenham como investir em ferramentas.
-Me inspirei no Layer Factor do [Sergey Kritskiy](https://kritskiy.gumroad.com/), mas estou cogitando em ser um plugin para a criação de janelas com botões personalizáveis (Estou pensando num propósito de ser útil para diferentes workflows). 
+Initially I made it to help the open source community and artists who may want alternatives if they don't have the means to invest in tools.
+I was inspired by the "Layer Factor" plugin from [Sergey Kritskiy](https://kritskiy.gumroad.com/), but I'm thinking about being a plugin for creating windows with customizable buttons (I'm thinking of a purpose of being useful for different workflows).
 
 
 ## Commands 🚀
@@ -20,10 +20,11 @@ Atualmente e fase inicial.
 
 ## Status 🏗️
 
-Initial development.
+In Krita's top menu, go to Tools > Script, and then has two option: Import Python Plugin from **File** or **Web**.
+choose the best option for your case.
 
 
 ## Donation 🤝
 
-Sendo um plugin gratuíto, fique livre para contribuir ou até fazer uma doação para eu continuar dando suporte para está ferramenta.
-[Meu LivrePIX 🪙 :](https://livepix.gg/rafaeltas)
+This plugin is free, feel free to help or contribute to this project however you can.
+[Donation 🪙 :](https://livepix.gg/rafaeltas)
