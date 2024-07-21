@@ -16,12 +16,12 @@ I was inspired by the "Layer Factor" plugin from [Sergey Kritskiy](https://krits
 
 ## Installation
 
-Atualmente e fase inicial.
+In Krita's top menu, go to Tools > Script, and then has two option: Import Python Plugin from **File** or **Web**.
+choose the best option for your case.
 
 ## Status 🏗️
 
-In Krita's top menu, go to Tools > Script, and then has two option: Import Python Plugin from **File** or **Web**.
-choose the best option for your case.
+Initial fase.
 
 
 ## Donation 🤝
