@@ -8,22 +8,22 @@ Me inspirei no Layer Factor do [Sergey Kritskiy](https://kritskiy.gumroad.com/),
 
 ## Commands 🚀
 
-No momento as cores dos botões seguem o padrão do tema do usuário, talvez seja uma coisa legal de deixar o usuário configurar....
-Comando extras:
 (LMB = Left Mouse Button)
-- **LMB** = Cria uma layer com o blending mode selecionado.
-- **LShift + LMB**= Muda o blending mode da layer selecionada para a opção clicada.
-- **LCtrl + LMB** = Cria uma layer com o blending mode selecionado abaixo da layer selecionada anteriormente.
+- **LMB** : Add a new paint layer with the blending mode selected.
+- **LShift + LMB** : Change the blending mode of the current selected layer.
+- **LCtrl + LMB** : Add a new paint layer with the blending mode chosen below the selected layer.
 
----
 
-## Status 🏗️
+## Installation
 
 Atualmente e fase inicial.
 
----
+## Status 🏗️
 
-## Contribuição 🤝
+Initial development.
+
+
+## Donation 🤝
 
 Sendo um plugin gratuíto, fique livre para contribuir ou até fazer uma doação para eu continuar dando suporte para está ferramenta.
 [Meu LivrePIX 🪙 :](https://livepix.gg/rafaeltas)
